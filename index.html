@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glamour Girls Salon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+
+<body class="bg-pink-50 text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#home" class="flex items-center space-x-2">
+                <img src="images/logo 3.png" alt="Glamour Girls Salon Logo" class="h-10 w-auto">
+            </a>
+
+            <ul class="flex space-x-6 text-pink-600 font-semibold">
+                <li><a href="home.html" class="hover:text-pink-400">Home</a></li>
+                <li><a href="#services" class="hover:text-pink-400">Services</a></li>
+                <li><a href="#offers" class="hover:text-pink-400">Offers</a></li>
+                <li><a href="#testimonials" class="hover:text-pink-400">Testimonials</a></li>
+                <li><a href="about.html" class="hover:text-pink-400">About</a></li>
+                <li><a href="contact,html" class="hover:text-pink-400">Contact</a></li>
+                <!-- Sign In Button -->
+                <button id="openSignIn"
+                    class="bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 transition">Sign
+                    In</button>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sign In Modal -->
+    <div id="signInModal" class="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center hidden z-50">
+        <div class="bg-white w-full max-w-sm rounded-lg shadow-lg p-6 relative">
+            <!-- Close Button -->
+            <button id="closeSignIn"
+                class="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-xl">&times;</button>
+
+            <h2 class="text-xl font-bold mb-4 text-gray-800 text-center">Sign In</h2>
+            <form class="space-y-4">
+                <div>
+                    <label class="block text-gray-700 text-sm mb-1">Email</label>
+                    <input type="email"
+                        class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-pink-500"
+                        placeholder="you@example.com" required>
+                </div>
+                <div>
+                    <label class="block text-gray-700 text-sm mb-1">Password</label>
+                    <input type="password"
+                        class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-pink-500"
+                        placeholder="••••••••" required>
+                </div>
+                <button type="submit"
+                    class="w-full bg-pink-600 text-white py-2 rounded hover:bg-pink-700 transition">Sign
+                    In</button>
+            </form>
+        </div>
+    </div>
+
+    <!----hero-->
+    <section id="home" class="relative overflow-hidden h-[500px]">
+        <div class="w-full h-full relative">
+            <div id="hero-carousel" class="flex w-full transition-transform duration-700 ease-in-out">
+                <div class="w-full flex-shrink-0">
+                    <img src="images/hero 1.jpg" class="w-full h-[500px] object-cover" alt="Slide 1">
+                </div>
+                <div class="w-full flex-shrink-0">
+                    <img src="images/hero 2.jpg" class="w-full h-[500px] object-cover" alt="Slide 2">
+                </div>
+                <div class="w-full flex-shrink-0">
+                    <img src="images/hero 3.jpg" class="w-full h-[500px] object-cover" alt="Slide 3">
+                </div>
+            </div>
+
+
+            <!-- Overlay Content -->
+            <div
+                class="absolute inset-0 flex flex-col items-center justify-center bg-pink-50/40 text-black text-center px-4 z-10">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Beauty Begins Here</h2>
+                <p class="text-lg mb-6">Treat yourself to a luxurious experience with our expert stylists and premium
+                    services.</p>
+                <a href="booking.html"
+                    class="bg-pink-600 text-black px-6 py-3 rounded-full hover:bg-white transition">Book
+                    Now</a>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <button id="prevBtn"
+                class="absolute left-4 top-1/2 -translate-y-1/2 z-20 text-black text-4xl">&#10094;</button>
+            <button id="nextBtn"
+                class="absolute right-4 top-1/2 -translate-y-1/2 z-20 text-black text-4xl">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Collaborating Companies Section -->
+    <section class="bg-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center">
+                <!-- bKash -->
+                <div class="flex justify-center">
+                    <img src="images/Bkash-Logo.jpg" alt="bKash" class="h-12 object-contain">
+                </div>
+                <!-- Nagad -->
+                <div class="flex justify-center">
+                    <img src="images/Nagad-Logo.png" alt="Nagad" class="h-12 object-contain">
+                </div>
+                <!-- DBBL (Dutch-Bangla Bank) -->
+                <div class="flex justify-center">
+                    <img src="images/dbbl.jpeg" alt="DBBL" class="h-12 object-contain">
+                </div>
+                <!-- BRAC Bank -->
+                <div class="flex justify-center">
+                    <img src="images/brack.png" alt="BRAC Bank" class="h-12 object-contain">
+                </div>
+                <!-- Islami Bank -->
+                <div class="flex justify-center">
+                    <img src="images/islami 2.jpeg" alt="Islami Bank" class="h-12 object-contain">
+                </div>
+                <!-- City Bank -->
+                <div class="flex justify-center">
+                    <img src="images/city 2.png" alt="City Bank" class="h-12 object-contain">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h3 class="text-3xl font-bold text-pink-700 mb-10">Our Services</h3>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-8 ">
+                <a href="premium.html" class="block">
+                    <div class="bg-pink-100 p-6 rounded-lg shadow hover:shadow-lg transition hover:bg-violet-300">
+                        <h4 class="text-xl font-semibold text-pink-600 mb-2">premium</h4>
+                        <p>Trendy cuts, colors, and styling for all occasions.</p>
+                    </div>
+                </a>
+                <a href="bodycare.html" class="block">
+                    <div class="bg-pink-100 p-6 rounded-lg shadow hover:shadow-lg transition  hover:bg-violet-300">
+                        <h4 class="text-xl font-semibold text-pink-600 mb-2">Body Care</h4>
+                        <p>Glow up with our rejuvenating facials and skin treatments.</p>
+                    </div>
+                </a>
+                <a href="haircare.html" class="block">
+                    <div class="bg-pink-100 p-6 rounded-lg shadow hover:shadow-lg transition  hover:bg-violet-300">
+                        <h4 class="text-xl font-semibold text-pink-600 mb-2">Hair Care</h4>
+                        <p>Pamper your hair with our relaxing treatments.</p>
+                    </div>
+                </a>
+                <a href="bridal.html" class="block">
+                    <div class="bg-pink-100 p-6 rounded-lg shadow hover:shadow-lg transition  hover:bg-violet-300">
+                        <h4 class="text-xl font-semibold text-pink-600 mb-2">Bridal</h4>
+                        <p>Make yourself beautiful with our relaxing treatments on your special day.</p>
+                    </div>
+                </a>
+                <a href="art.html" class="block">
+                    <div class="bg-pink-100 p-6 rounded-lg shadow hover:shadow-lg transition  hover:bg-violet-300">
+                        <h4 class="text-xl font-semibold text-pink-600 mb-2">Nail & Henna Art</h4>
+                        <p>Make your hand beautiful with our relaxing treatments.</p>
+                    </div>
+                </a>
+                <a href="packeg.html" class="block">
+                    <div class="bg-pink-100 p-6 rounded-lg shadow hover:shadow-lg transition  hover:bg-violet-300">
+                        <h4 class="text-xl font-semibold text-pink-600 mb-2">Package</h4>
+                        <p>Take whole package of our relaxing treatments with offers.</p>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+    <!---offers--->
+    <section id="offers" class="bg-pink-50 py-16">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h3 class="text-3xl font-bold text-pink-700 mb-10">Find offers with us</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Banner Image Section -->
+                <div class=" p-6 rounded-lg ">
+                    <img src="images/banner.jpg" alt="Promotional Banner" class="w-full rounded-lg shadow-md">
+                </div>
+
+                <!-- offers-->
+                <div class=" p-6 rounded-lg flex flex-col justify-center">
+                    <h4 class="text-xl font-semibold text-pink-700 mb-2">✨ Exclusive Offers You’ll Love:</h4>
+                    <ul class="list-disc list-inside text-gray-700 text-sm leading-relaxed">
+                        <li>Flat <strong>20% OFF</strong> on your first haircut</li>
+                        <li><strong>Free Nail Art</strong> with any manicure package</li>
+                        <li>Trial Bridal Makeup for just <strong>Tk 499</strong></li>
+                        <li><strong>Refer a friend</strong> and get Tk 200 OFF your next visit</li>
+                        <li><strong>15% OFF</strong> during Happy Hour (Weekdays 12 PM – 4 PM)</li>
+                    </ul>
+                    <div class="btn mt-10 text-center">
+                        <a href="offers.html" target="_blank" rel="noopener noreferrer"
+                            class="bg-pink-600 text-black px-6 py-3 rounded-full hover:bg-orange-500 transition">Search
+                            Offers
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials Section -->
+
+    <section id="testimonials" class=" bg-gradient-to-r from-white to-pink-500 py-16">
+        <div class="max-w-2xl mx-auto px-4 text-center">
+            <h3 class="text-3xl font-bold text-white mb-10">What Our Clients Say</h3>
+
+            <div class="relative overflow-hidden">
+                <!-- Carousel wrapper -->
+                <div id="testimonial-carousel" class="flex transition-transform duration-700 ease-in-out">
+                    <!-- Testimonial 1 -->
+                    <div class="min-w-full px-4">
+                        <div class="bg-white p-6 rounded-lg shadow">
+                            <p class="italic">“Absolutely loved my new haircut! The staff was friendly and
+                                professional.”</p>
+                            <h5 class="mt-4 font-semibold text-pink-600">— Sarah K.</h5>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="min-w-full px-4">
+                        <div class="bg-white p-6 rounded-lg shadow">
+                            <p class="italic">“The facial made my skin glow for days! Highly recommend.”</p>
+                            <h5 class="mt-4 font-semibold text-pink-600">— Aysha S.</h5>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="min-w-full px-4">
+                        <div class="bg-white p-6 rounded-lg shadow">
+                            <p class="italic">“Amazing experience! The environment was clean and calming.”</p>
+                            <h5 class="mt-4 font-semibold text-pink-600">— Mehnaz I.</h5>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="min-w-full px-4">
+                        <div class="bg-white p-6 rounded-lg shadow">
+                            <p class="italic">“Great staff and excellent pedicure service. Will come again!”</p>
+                            <h5 class="mt-4 font-semibold text-pink-600">— Tasnim B.</h5>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 5 -->
+                    <div class="min-w-full px-4">
+                        <div class="bg-white p-6 rounded-lg shadow">
+                            <p class="italic">“I loved the bridal makeup — it was just perfect for my big day!”</p>
+                            <h5 class="mt-4 font-semibold text-pink-600">— Rupa Z.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Employee Experience Section -->
+    <section id="employee-experience" class="bg-white py-16">
+        <div class="max-w-6xl mx-auto px-6">
+            <h3 class="text-3xl font-bold text-pink-700 text-center mb-12">Employee Experience</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Experience 1 -->
+                <div class="bg-pink-50 p-6 rounded-lg shadow hover:shadow-md transition">
+                    <h4 class="text-xl font-semibold text-pink-600 mb-2">Empowered Growth</h4>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                        “Working at Glamour Girls has helped me grow professionally. I’ve taken certified makeup courses
+                        and
+                        now lead my own team.”
+                    </p>
+                    <p class="mt-4 text-sm text-gray-500 italic">— Anika, Lead Makeup Artist</p>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="bg-pink-50 p-6 rounded-lg shadow hover:shadow-md transition">
+                    <h4 class="text-xl font-semibold text-pink-600 mb-2">Supportive Environment</h4>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                        “Everyone here supports each other. We’re more like a family than coworkers — which reflects in
+                        our
+                        service.”
+                    </p>
+                    <p class="mt-4 text-sm text-gray-500 italic">— Rabeya, Hair Stylist</p>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="bg-pink-50 p-6 rounded-lg shadow hover:shadow-md transition">
+                    <h4 class="text-xl font-semibold text-pink-600 mb-2">Always Learning</h4>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                        “The salon encourages constant learning. We get hands-on training with new trends, tools, and
+                        techniques every month.”
+                    </p>
+                    <p class="mt-4 text-sm text-gray-500 italic">— Mitu, Skincare Specialist</p>
+                </div>
+
+                <!-- Experience 4 -->
+                <div class="bg-pink-50 p-6 rounded-lg shadow hover:shadow-md transition">
+                    <h4 class="text-xl font-semibold text-pink-600 mb-2">Work-Life Balance</h4>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                        “Schedules are flexible and management cares about our wellbeing. I love that I can be creative
+                        and
+                        balanced here.”
+                    </p>
+                    <p class="mt-4 text-sm text-gray-500 italic">— Sumaya, Nail Technician</p>
+                </div>
+
+                <!-- Experience 5 -->
+                <div class="bg-pink-50 p-6 rounded-lg shadow hover:shadow-md transition">
+                    <h4 class="text-xl font-semibold text-pink-600 mb-2">Recognition & Rewards</h4>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                        “Good work doesn’t go unnoticed. We get bonuses, awards, and appreciation — it really motivates
+                        me
+                        to do my best.”
+                    </p>
+                    <p class="mt-4 text-sm text-gray-500 italic">— Liana, Reception Manager</p>
+                </div>
+
+                <!-- Experience 6 -->
+                <div class="bg-pink-50 p-6 rounded-lg shadow hover:shadow-md transition">
+                    <h4 class="text-xl font-semibold text-pink-600 mb-2">Creative Freedom</h4>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                        “I’m free to express my style and try new things with clients — it keeps my work fresh and
+                        exciting
+                        every day.”
+                    </p>
+                    <p class="mt-4 text-sm text-gray-500 italic">— Shanta, Junior Stylist</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+
+
+    <section class="bg-gradient-to-r from-white to-pink-500 p-6">
+        <div class="max-w-xl mx-auto mt-10">
+            <h2 class="text-2xl font-bold text-white mb-6 text-center">Our Products</h2>
+
+            <div class="relative overflow-hidden">
+                <!-- Carousel -->
+                <div id="carousel" class="flex transition-transform duration-700 ease-in-out">
+                    <!-- Product 1 -->
+                    <div class="min-w-full px-4">
+                        <div class="bg-gray-100 p-6 rounded-lg shadow text-center">
+                            <img src="images/hair oil.png" alt="Product 1"
+                                class="w-full h-40 object-contain rounded mb-4">
+                            <h3 class="text-xl font-semibold"> Hair Oil</h3>
+                            <p class="text-gray-600 mb-2">$29.99</p>
+                            <a href="product-store.html"
+                                class="bg-pink-600 text-black px-6 py-3 rounded-full hover:bg-yellow-500 transition">Buy
+                                Now</a>
+
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="min-w-full px-4">
+                        <div class="bg-gray-100 p-6 rounded-lg shadow text-center">
+                            <img src="images/hair pack.png" alt="Product 2"
+                                class="w-full h-40 object-contain rounded mb-4">
+                            <h3 class="text-xl font-semibold">Hair Pack</h3>
+                            <p class="text-gray-600 mb-2">$39.99</p>
+                            <a href="product-store.html"
+                                class="bg-pink-600 text-black px-6 py-3 rounded-full hover:bg-yellow-500 transition">Buy
+                                Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="min-w-full px-4">
+                        <div class="bg-gray-100 p-6 rounded-lg shadow text-center">
+                            <img src="images/pace pack.png" alt="Product 3"
+                                class="w-full h-40 object-contain rounded mb-4">
+                            <h3 class="text-xl font-semibold">Organic Face Pack</h3>
+                            <p class="text-gray-600 mb-2">$49.99</p>
+                            <a href="product-store.html"
+                                class="bg-pink-600 text-black px-6 py-3 rounded-full hover:bg-yellow-500 transition">Buy
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dots -->
+                <div class="flex justify-center mt-4 space-x-2" id="dots">
+                    <button class="w-3 h-3 bg-gray-400 rounded-full" data-index="0"></button>
+                    <button class="w-3 h-3 bg-gray-300 rounded-full" data-index="1"></button>
+                    <button class="w-3 h-3 bg-gray-300 rounded-full" data-index="2"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ & Locations Section -->
+    <section class=" bg-pink-100 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 bg-pink-300 p-8  gap-12">
+
+                <!-- FAQ Column -->
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Frequently Asked Questions</h2>
+                    <div class="space-y-4">
+
+                        <!-- Accordion Item -->
+                        <div class="border rounded-lg bg-white">
+                            <button
+                                class="w-full text-left px-4 py-3 font-semibold text-gray-700 hover:bg-gray-100 accordion-toggle">
+                                What services does your salon offer?
+                            </button>
+                            <div class="px-4 pb-4 hidden text-gray-600 accordion-content bg-sky-100">
+                                We provide haircuts, coloring, facials, makeup, manicures, pedicures, and more.
+                            </div>
+                        </div>
+
+                        <div class="border rounded-lg bg-white">
+                            <button
+                                class="w-full text-left px-4 py-3 font-semibold text-gray-700 hover:bg-gray-100 accordion-toggle">
+                                Do I need an appointment?
+                            </button>
+                            <div class="px-4 pb-4 hidden text-gray-600 accordion-content bg-sky-100">
+                                Appointments are recommended, especially on weekends, but we accept walk-ins if slots
+                                are
+                                free.
+                            </div>
+                        </div>
+
+                        <div class="border rounded-lg bg-white">
+                            <button
+                                class="w-full text-left px-4 py-3 font-semibold text-gray-700 hover:bg-gray-100 accordion-toggle">
+                                What are your payment options?
+                            </button>
+                            <div class="px-4 pb-4 hidden text-gray-600 accordion-content bg-sky-100">
+                                We accept cash, bKash, Nagad, and all major debit/credit cards.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Locations Column -->
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Our Locations</h2>
+                    <div class="space-y-6">
+
+                        <!-- Location Card -->
+                        <div class="bg-white shadow-md rounded-lg p-4">
+                            <h3 class="text-lg font-semibold text-gray-700">Dhaka (Gulshan Branch)</h3>
+                            <p class="text-gray-600">123 Gulshan Avenue, Dhaka 1212<br>Phone: 01234-567890</p>
+                            <p class="text-sm text-pink-500 mt-1">🕒 Open: 10:00 AM – 8:00 PM (Sat–Thu)</p>
+                        </div>
+
+                        <div class="bg-white shadow-md rounded-lg p-4">
+                            <h3 class="text-lg font-semibold text-gray-700">Chittagong (Agrabad)</h3>
+                            <p class="text-gray-600">45 Agrabad, Chattogram<br>Phone: 01345-678910</p>
+                            <p class="text-sm text-pink-500 mt-1">🕒 Open: 10:30 AM – 7:30 PM (Sat–Thu)</p>
+                        </div>
+
+                        <div class="bg-white shadow-md rounded-lg p-4">
+                            <h3 class="text-lg font-semibold text-gray-700">Sylhet (Zindabazar)</h3>
+                            <p class="text-gray-600">27 Zindabazar, Sylhet 3100<br>Phone: 01456-789012</p>
+                            <p class="text-sm text-pink-500 mt-1">🕒 Open: 11:00 AM – 8:00 PM (Everyday)</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-pink-700 text-white py-12 mt-10">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
+
+            <!-- Logo and About -->
+            <div>
+                <img src="images/logo 3.png" alt="Glamour Girls Logo" class="h-12 mb-4 filter invert text-white">
+                <p class="text-pink-100">Glamour Girls Salon offers premium beauty services to make you feel radiant
+                    inside
+                    and
+                    out.</p>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h4 class="font-semibold text-white mb-3">Contact</h4>
+                <p>Email: <a href="mailto:contact@glamourgirls.com" class="hover:underline">contact@glamourgirls.com</a>
+                </p>
+                <p>Phone: <a href="tel:+8801234567890" class="hover:underline">+880 123-456-7890</a></p>
+                <p>Location: Dhaka, Bangladesh</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h4 class="font-semibold text-white mb-3">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="home.html" class="hover:underline">Home</a></li>
+                    <li><a href="about.html" class="hover:underline">About Us</a></li>
+                    <li><a href="services.html" class="hover:underline">Services</a></li>
+                    <li><a href="offers.html" class="hover:underline">Offers</a></li>
+                    <li><a href="booking.html" class="hover:underline">Book Now</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media & Email Subscription -->
+            <div>
+                <h4 class="font-semibold text-white mb-3">Follow Us</h4>
+                <div class="flex space-x-4 text-lg">
+                    <a href="#" class="hover:text-pink-200">🌐</a>
+                    <a href="#" class="hover:text-pink-200">📸</a>
+                    <a href="#" class="hover:text-pink-200">🐦</a>
+                </div>
+                <p class="mt-4 text-pink-100">Stay connected for tips, trends & updates!</p>
+
+                <!-- Email Subscription -->
+                <form id="subscribeForm" class="mt-4 flex flex-col sm:flex-row items-center gap-2">
+                    <input type="email" required placeholder="Enter your email"
+                        class="w-full px-3 py-2 text-sm text-pink-900 rounded focus:outline-none focus:ring-2 focus:ring-pink-200" />
+                    <button type="submit"
+                        class="bg-white text-pink-700 font-semibold px-4 py-2 rounded hover:bg-pink-100 transition">Subscribe</button>
+                </form>
+            </div>
+
+        </div>
+
+        <!-- Bottom -->
+        <div class="mt-12 text-center text-xs text-pink-100 border-t border-pink-500 pt-6">
+            © 2025 Glamour Girls Salon. Designed with 💖 in Bangladesh.
+        </div>
+    </footer>
+
+
+    <script src="javascript/salon.js"></script>
+    <script src="javascript/firstcarousel.js"></script>
+    <script src="javascript/testimonialscarousel.js"></script>
+    <script src="javascript/product-scroll.js"></script>
+    <script src="javascript/question.js"></script>
+    <script src="javascript/sign-in.js"></script>
+    <script src="javascript/footer.js"></script>
+
+</body>
+
+</html>

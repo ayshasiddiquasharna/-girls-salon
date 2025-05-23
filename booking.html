@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glamour Girls Salon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-pink-50 text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#home" class="flex items-center space-x-2">
+                <img src="images/logo 3.png" alt="Glamour Girls Salon Logo" class="h-10 w-auto">
+            </a>
+
+            <ul class="flex space-x-6 text-pink-600 font-semibold">
+                <li><a href="home.html" class="hover:text-pink-400">Home</a></li>
+                <li><a href="#services" class="hover:text-pink-400">Services</a></li>
+                <li><a href="#offers" class="hover:text-pink-400">Offers</a></li>
+                <li><a href="#testimonials" class="hover:text-pink-400">Testimonials</a></li>
+                <li><a href="about.html" class="hover:text-pink-400">About</a></li>
+                <li><a href="contact,html" class="hover:text-pink-400">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="py-8">
+        <div class="flex items-center justify-around  text-sm scrollbar-hide lg:mx-auto lg:max-w-6.5xl">
+            <div class="flex items-center justify-center gap-4 gap-y-2">
+                <a class="cursor-pointer text-nowrap rounded-full px-4 py-2 text-center text-xs uppercase tracking-widest bg-pink-300 text-boulder-500 hover:bg-eminence-300 hover:bg-eminence-300 hover:text-white"
+                    href="/services/all">All</a>
+
+                <a class="cursor-pointer text-nowrap rounded-full px-4 py-2 text-center text-xs uppercase tracking-widest bg-pink-300  text-boulder-500 md:bg-eminence-100 md:text-eminence-700 hover:bg-eminence-300 hover:text-white"
+                    href="/services/body-care">Body Care</a>
+
+                <a class="cursor-pointer text-nowrap rounded-full px-4 py-2 text-center text-xs uppercase tracking-widest bg-pink-300 text-boulder-500 md:bg-eminence-100 md:text-eminence-700 hover:bg-eminence-300 hover:text-white"
+                    href="/services/hair-care">Hair Care</a>
+
+                <a class="cursor-pointer text-nowrap rounded-full px-4 py-2 text-center text-xs uppercase tracking-widest bg-pink-300 text-boulder-500 md:bg-eminence-100 md:text-eminence-700 hover:bg-eminence-300 hover:text-white"
+                    href="/services/makeover">Makeover</a>
+
+                <a class="cursor-pointer text-nowrap rounded-full px-4 py-2 text-center text-xs uppercase tracking-widest bg-pink-300 text-boulder-500 md:bg-eminence-100 md:text-eminence-700 hover:bg-eminence-300 hover:text-white"
+                    href="/services/bridal">Bridal</a>
+
+                <a class="cursor-pointer text-nowrap rounded-full px-4 py-2 text-center text-xs uppercase tracking-widest bg-pink-300 text-boulder-500 md:bg-eminence-100 md:text-eminence-700 hover:bg-eminence-300 hover:text-white"
+                    href="/services/packages">Packages</a>
+
+                <a class="cursor-pointer text-nowrap rounded-full px-4 py-2 text-center text-xs uppercase tracking-widest bg-pink-300 text-boulder-500 md:bg-eminence-100 md:text-eminence-700 hover:bg-eminence-300 hover:text-white"
+                    href="/services/premium">Premium</a>
+
+                <a class="cursor-pointer text-nowrap rounded-full px-4 py-2 text-center text-xs uppercase tracking-widest bg-pink-300 text-boulder-500 md:bg-eminence-100 md:text-eminence-700 hover:bg-eminence-300 hover:text-white"
+                    href="/services/henna-art">Henna Art</a>
+
+                <a class="cursor-pointer text-nowrap rounded-full px-4 py-2 text-center text-xs uppercase tracking-widest bg-pink-300 text-boulder-500 md:bg-eminence-100 md:text-eminence-700 hover:bg-eminence-300 hover:text-white"
+                    href="/services/hair-removal">Hair Removal</a>
+
+                <a class="cursor-pointer text-nowrap rounded-full px-4 py-2 text-center text-xs uppercase tracking-widest bg-pink-300 text-boulder-500 md:bg-eminence-100 md:text-eminence-700 hover:bg-eminence-300 hover:text-white"
+                    href="/services/hairstyle">Hairstyle</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Form Section -->
+    <section id="booking" class="py-20 bg-gradient-to-br from-pink-100 to-white">
+        <div class="max-w-3xl mx-auto px-6">
+            <div class="bg-white rounded-3xl shadow-2xl p-10">
+                <h2 class="text-4xl font-extrabold text-pink-700 text-center mb-10">Book Your Appointment</h2>
+    
+                <form id="bookingForm" class="space-y-8">
+                    <!-- Name -->
+                    <div>
+                        <label for="name" class="block text-pink-700 font-semibold mb-2">Full Name</label>
+                        <input type="text" id="name" name="name" required
+                            class="w-full px-5 py-3 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-pink-400" />
+                    </div>
+    
+                    <!-- Phone -->
+                    <div>
+                        <label for="phone" class="block text-pink-700 font-semibold mb-2">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required
+                            class="w-full px-5 py-3 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-pink-400" />
+                    </div>
+    
+                    <!-- Date and Time -->
+                    <div class="flex flex-col sm:flex-row gap-6">
+                        <div class="flex-1">
+                            <label for="date" class="block text-pink-700 font-semibold mb-2">Preferred Date</label>
+                            <input type="date" id="date" name="date" required
+                                class="w-full px-5 py-3 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-pink-400" />
+                        </div>
+                        <div class="flex-1">
+                            <label for="time" class="block text-pink-700 font-semibold mb-2">Preferred Time</label>
+                            <input type="time" id="time" name="time" required
+                                class="w-full px-5 py-3 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-pink-400" />
+                        </div>
+                    </div>
+    
+                    <!-- Service -->
+                    <div>
+                        <label for="service" class="block text-pink-700 font-semibold mb-2">Service</label>
+                        <select id="service" name="service" required
+                            class="w-full px-5 py-3 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-pink-400">
+                            <option value="" disabled selected>Select a service</option>
+                            <option value="Hair Styling">Hair Styling</option>
+                            <option value="Facial">Facial</option>
+                            <option value="Manicure/Pedicure">Manicure/Pedicure</option>
+                            <option value="Bridal Makeup">Bridal Makeup</option>
+                        </select>
+                    </div>
+    
+                    <!-- Payment Method -->
+                    <div>
+                        <label for="paymentMethod" class="block text-pink-700 font-semibold mb-2">Payment Method</label>
+                        <select id="paymentMethod" name="paymentMethod" required
+                            class="w-full px-5 py-3 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-pink-400">
+                            <option value="" disabled selected>Select payment method</option>
+                            <option value="bkash">bKash</option>
+                            <option value="nagad">Nagad</option>
+                            <option value="bank">Bank Transfer</option>
+                        </select>
+                    </div>
+    
+                    <!-- Mobile Payment Fields -->
+                    <div id="mobilePaymentFields" class="hidden space-y-4">
+                        <input type="text" id="senderNumber" name="senderNumber" placeholder="Sender Number"
+                            class="w-full px-5 py-3 border border-gray-300 rounded-xl shadow-sm" />
+                        <input type="text" id="trxId" name="trxId" placeholder="Transaction ID"
+                            class="w-full px-5 py-3 border border-gray-300 rounded-xl shadow-sm" />
+                    </div>
+    
+                    <!-- Bank Payment Field -->
+                    <div id="bankPaymentField" class="hidden">
+                        <input type="text" id="bankAccount" name="bankAccount" placeholder="Bank Account Details"
+                            class="w-full px-5 py-3 border border-gray-300 rounded-xl shadow-sm" />
+                    </div>
+    
+                    <!-- Submit Button -->
+                    <div class="text-center">
+                        <button type="submit"
+                            class="bg-pink-600 hover:bg-pink-500 text-white text-lg px-10 py-3 rounded-full transition duration-300 shadow-md">
+                            Confirm Booking
+                        </button>
+                    </div>
+    
+                    <!-- Success Message -->
+                    <p id="successMessage" class="text-green-600 font-semibold text-center hidden">
+                        🎉 Appointment booked successfully!
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer -->
+    
+<footer id="contact" class="bg-pink-700 text-white py-12 mt-10">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
+
+        <!-- Logo and About -->
+        <div>
+            <img src="images/logo 3.png" alt="Glamour Girls Logo" class="h-12 mb-4 filter invert text-white">
+            <p class="text-pink-100">Glamour Girls Salon offers premium beauty services to make you feel radiant
+                inside
+                and
+                out.</p>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+            <h4 class="font-semibold text-white mb-3">Contact</h4>
+            <p>Email: <a href="mailto:contact@glamourgirls.com" class="hover:underline">contact@glamourgirls.com</a>
+            </p>
+            <p>Phone: <a href="tel:+8801234567890" class="hover:underline">+880 123-456-7890</a></p>
+            <p>Location: Dhaka, Bangladesh</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+            <h4 class="font-semibold text-white mb-3">Quick Links</h4>
+            <ul class="space-y-2">
+                <li><a href="home.html" class="hover:underline">Home</a></li>
+                <li><a href="about.html" class="hover:underline">About Us</a></li>
+                <li><a href="services.html" class="hover:underline">Services</a></li>
+                <li><a href="offers.html" class="hover:underline">Offers</a></li>
+                <li><a href="booking.html" class="hover:underline">Book Now</a></li>
+            </ul>
+        </div>
+
+        <!-- Social Media & Email Subscription -->
+        <div>
+            <h4 class="font-semibold text-white mb-3">Follow Us</h4>
+            <div class="flex space-x-4 text-lg">
+                <a href="#" class="hover:text-pink-200">🌐</a>
+                <a href="#" class="hover:text-pink-200">📸</a>
+                <a href="#" class="hover:text-pink-200">🐦</a>
+            </div>
+            <p class="mt-4 text-pink-100">Stay connected for tips, trends & updates!</p>
+
+            <!-- Email Subscription -->
+            <form id="subscribeForm" class="mt-4 flex flex-col sm:flex-row items-center gap-2">
+                <input type="email" required placeholder="Enter your email"
+                    class="w-full px-3 py-2 text-sm text-pink-900 rounded focus:outline-none focus:ring-2 focus:ring-pink-200" />
+                <button type="submit"
+                    class="bg-white text-pink-700 font-semibold px-4 py-2 rounded hover:bg-pink-100 transition">Subscribe</button>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="mt-12 text-center text-xs text-pink-100 border-t border-pink-500 pt-6">
+        © 2025 Glamour Girls Salon. Designed with 💖 in Bangladesh.
+    </div>
+</footer>
+    <script src="javascript/booking.js"></script>
+    <script src="javascript/footer.js"></script>
+</body>
+
+</html>

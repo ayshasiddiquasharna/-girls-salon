@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glamour Girls Salon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-pink-50 text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md mb-4">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#home" class="flex items-center space-x-2">
+                <img src="images/logo 3.png" alt="Glamour Girls Salon Logo" class="h-10 w-auto">
+            </a>
+
+            <ul class="flex space-x-6 text-pink-600 font-semibold">
+                <li><a href="home.html" class="hover:text-pink-400">Home</a></li>
+                <li><a href="#services" class="hover:text-pink-400">Services</a></li>
+                <li><a href="#offers" class="hover:text-pink-400">Offers</a></li>
+                <li><a href="#testimonials" class="hover:text-pink-400">Testimonials</a></li>
+                <li><a href="about.html" class="hover:text-pink-400">About</a></li>
+                <li><a href="contact,html" class="hover:text-pink-400">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!-- Cart Display -->
+    <div class="flex justify-end mb-5 gap-4 px-8">
+        <button class="bg-pink-500 text-white px-4 py-2 rounded-full">
+            🛒 Cart <span id="cart-count" class="ml-1 bg-white text-violet-600 px-2 rounded-full">0</span>
+        </button>
+        <!-- Example Buttons to Add/Remove (for demo purposes) -->
+        <div class="flex gap-4">
+            <button onclick="removeFromCart()" class="bg-pink-500 text-white px-4 py-2 rounded-full">Remove</button>
+        </div>
+    </div>
+
+
+
+    <!-- Layout: Products & Featured -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8  px-8">
+
+        <!-- Product Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+            <!-- Product Card -->
+            <div class="bg-white p-4 rounded-lg shadow">
+                <img src="images/premium 1.jpg" alt="Hair Styling" class="w-full rounded mb-3">
+                <h3 class="text-lg font-semibold text-pink-600">Revita Protein Therapy</h3>
+                <p class="text-sm text-gray-600 mb-1">Duration: 30 mins</p>
+                <p class="text-sm text-gray-600 mb-2">Orders: 125+</p>
+                <div class="flex justify-between items-center">
+                    <div>
+                        <span class="text-sm line-through text-gray-400 mr-1">$29.99</span>
+                        <span class="text-violet-700 font-semibold">$23.99</span>
+                        <span class="bg-red-100 text-red-600 text-xs font-bold px-2 py-1 rounded-full ml-2">20%
+                            OFF</span>
+                    </div>
+                    <button onclick="addToCart('Hair Styling', 29.99, 0.2)"
+                        class="bg-pink-500 text-white px-3 py-1 rounded hover:bg-violet-600 transition">Add</button>
+                </div>
+            </div>
+
+            <!-- Repeat for other products -->
+
+            <div class="bg-white p-4 rounded-lg shadow">
+                <img src="images/premium 3.jpg" alt="Hair Coloring" class="w-full rounded mb-3">
+                <h3 class="text-lg font-semibold text-pink-600">Luxury Paraffin Pedicure</h3>
+                <p class="text-sm text-gray-600 mb-1">Duration: 45 mins</p>
+                <p class="text-sm text-gray-600 mb-2">Orders: 98+</p>
+                <div class="flex justify-between items-center">
+                    <div>
+                        <span class="text-sm line-through text-gray-400 mr-1">$39.99</span>
+                        <span class="text-violet-700 font-semibold">$31.99</span>
+                        <span class="bg-red-100 text-red-600 text-xs font-bold px-2 py-1 rounded-full ml-2">20%
+                            OFF</span>
+                    </div>
+                    <button onclick="addToCart('Hair Coloring', 39.99, 0.2)"
+                        class="bg-pink-500 text-white px-3 py-1 rounded hover:bg-violet-600 transition">Add</button>
+                </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-lg shadow">
+                <img src="images/premium 2.jpg" alt="Facial" class="w-full rounded mb-3">
+                <h3 class="text-lg font-semibold text-pink-600">Luxury rose Facial</h3>
+                <p class="text-sm text-gray-600 mb-1">Duration: 25 mins</p>
+                <p class="text-sm text-gray-600 mb-2">Orders: 140+</p>
+                <div class="flex justify-between items-center">
+                    <div>
+                        <span class="text-sm line-through text-gray-400 mr-1">$24.99</span>
+                        <span class="text-violet-700 font-semibold">$19.99</span>
+                        <span class="bg-red-100 text-red-600 text-xs font-bold px-2 py-1 rounded-full ml-2">20%
+                            OFF</span>
+                    </div>
+                    <button onclick="addToCart('Facial', 24.99, 0.2)"
+                        class="bg-pink-500 text-white px-3 py-1 rounded hover:bg-violet-600 transition">Add</button>
+                </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-lg shadow">
+                <img src="images/premium 4.jpg" alt="Hair Spa" class="w-full rounded mb-3">
+                <h3 class="text-lg font-semibold text-pink-600">Classic Paraffin Manicure</h3>
+                <p class="text-sm text-gray-600 mb-1">Duration: 35 mins</p>
+                <p class="text-sm text-gray-600 mb-2">Orders: 89+</p>
+                <div class="flex justify-between items-center">
+                    <div>
+                        <span class="text-sm line-through text-gray-400 mr-1">$34.99</span>
+                        <span class="text-violet-700 font-semibold">$27.99</span>
+                        <span class="bg-red-100 text-red-600 text-xs font-bold px-2 py-1 rounded-full ml-2">20%
+                            OFF</span>
+                    </div>
+                    <button onclick="addToCart('Hair Spa', 34.99, 0.2)"
+                        class="bg-pink-500 text-white px-3 py-1 rounded hover:bg-violet-600 transition">Add</button>
+                </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-lg shadow">
+                <img src="images/premium 6.jpg" alt="Manicure" class="w-full rounded mb-3">
+                <h3 class="text-lg font-semibold text-pink-600">Herbal skin care</h3>
+                <p class="text-sm text-gray-600 mb-1">Duration: 20 mins</p>
+                <p class="text-sm text-gray-600 mb-2">Orders: 110+</p>
+                <div class="flex justify-between items-center">
+                    <div>
+                        <span class="text-sm line-through text-gray-400 mr-1">$19.99</span>
+                        <span class="text-violet-700 font-semibold">$15.99</span>
+                        <span class="bg-red-100 text-red-600 text-xs font-bold px-2 py-1 rounded-full ml-2">20%
+                            OFF</span>
+                    </div>
+                    <button onclick="addToCart('Manicure', 19.99, 0.2)"
+                        class="bg-pink-500 text-white px-3 py-1 rounded hover:bg-violet-600 transition">Add</button>
+                </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-lg shadow">
+                <img src="images/premium 5.jpg" alt="Pedicure" class="w-full rounded mb-3">
+                <h3 class="text-lg font-semibold text-pink-600">Premium bridal makeover</h3>
+                <p class="text-sm text-gray-600 mb-1">Duration: 25 mins</p>
+                <p class="text-sm text-gray-600 mb-2">Orders: 105+</p>
+                <div class="flex justify-between items-center">
+                    <div>
+                        <span class="text-sm line-through text-gray-400 mr-1">$21.99</span>
+                        <span class="text-violet-700 font-semibold">$17.59</span>
+                        <span class="bg-pink-100 text-red-600 text-xs font-bold px-2 py-1 rounded-full ml-2">20%
+                            OFF</span>
+                    </div>
+                    <button onclick="addToCart('Pedicure', 21.99, 0.2)"
+                        class="bg-pink-500 text-white px-3 py-1 rounded hover:bg-violet-600 transition">Add</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Services -->
+        <div class=" bg-white p-6 rounded-lg shadow">
+            <h2 class="text-2xl font-bold text-pink-700 mb-4">Featured Services</h2>
+            <ul class="space-y-3">
+                <li class="bg-blue-100 p-4 rounded shadow hover:bg-pink-100 transition">
+                    <strong>Bridal Package</strong><br>
+                    Includes makeup, hairstyle, and saree draping.
+                </li>
+                <li class="bg-blue-100 p-4 rounded shadow hover:bg-pink-100 transition">
+                    <strong>Party Glam</strong><br>
+                    Quick styling for parties and events.
+                </li>
+                <li class="bg-blue-100 p-4 rounded shadow hover:bg-pink-100 transition">
+                    <strong>Color Refresh</strong><br>
+                    Touch-up and shine boost treatment.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-pink-700 text-white py-12 mt-10">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
+
+            <!-- Logo and About -->
+            <div>
+                <img src="images/logo 3.png" alt="Glamour Girls Logo" class="h-12 mb-4 filter invert text-white">
+                <p class="text-pink-100">Glamour Girls Salon offers premium beauty services to make you feel radiant
+                    inside
+                    and
+                    out.</p>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h4 class="font-semibold text-white mb-3">Contact</h4>
+                <p>Email: <a href="mailto:contact@glamourgirls.com" class="hover:underline">contact@glamourgirls.com</a>
+                </p>
+                <p>Phone: <a href="tel:+8801234567890" class="hover:underline">+880 123-456-7890</a></p>
+                <p>Location: Dhaka, Bangladesh</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h4 class="font-semibold text-white mb-3">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="home.html" class="hover:underline">Home</a></li>
+                    <li><a href="about.html" class="hover:underline">About Us</a></li>
+                    <li><a href="services.html" class="hover:underline">Services</a></li>
+                    <li><a href="offers.html" class="hover:underline">Offers</a></li>
+                    <li><a href="booking.html" class="hover:underline">Book Now</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media & Email Subscription -->
+            <div>
+                <h4 class="font-semibold text-white mb-3">Follow Us</h4>
+                <div class="flex space-x-4 text-lg">
+                    <a href="#" class="hover:text-pink-200">🌐</a>
+                    <a href="#" class="hover:text-pink-200">📸</a>
+                    <a href="#" class="hover:text-pink-200">🐦</a>
+                </div>
+                <p class="mt-4 text-pink-100">Stay connected for tips, trends & updates!</p>
+
+                <!-- Email Subscription -->
+                <form id="subscribeForm" class="mt-4 flex flex-col sm:flex-row items-center gap-2">
+                    <input type="email" required placeholder="Enter your email"
+                        class="w-full px-3 py-2 text-sm text-pink-900 rounded focus:outline-none focus:ring-2 focus:ring-pink-200" />
+                    <button type="submit"
+                        class="bg-white text-pink-700 font-semibold px-4 py-2 rounded hover:bg-pink-100 transition">Subscribe</button>
+                </form>
+            </div>
+
+        </div>
+
+        <!-- Bottom -->
+        <div class="mt-12 text-center text-xs text-pink-100 border-t border-pink-500 pt-6">
+            © 2025 Glamour Girls Salon. Designed with 💖 in Bangladesh.
+        </div>
+    </footer>
+
+
+    <script src="javascript/cart.js"></script>
+    <script src="javascript/footer.js"></script>
+
+</body>
+
+</html>
